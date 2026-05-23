@@ -21,7 +21,7 @@ jobs:
       - name: Build static files
         id: build
         run: |
-          bun build ./index.html --outdir
+          bun build ./index.html --outdir ./dist
 
       - name: Upload static files as artifact
         id: upload
