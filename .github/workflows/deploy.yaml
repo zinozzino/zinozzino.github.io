@@ -20,6 +20,11 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Install dependencies
+        id: install_deps
+        run: |
+          bun install --frozen-lockfile --no-cache
+
       - name: Build static files
         id: build
         run: |
